@@ -5,11 +5,11 @@ COPY Rprofile /root/.Rprofile
 
 RUN echo 'ILoveCandy' >> /etc/pacman.conf
 RUN pacman -Syu --noconfirm
-RUN pacman -S vim nano
+RUN pacman -S vim nano --noconfirm
 
 # Se precisar de compilacao (recomendado se for usar o R)
-# RUN pacman -S base-devel --noconfirm --needed
+RUN pacman -S base-devel --noconfirm --needed
 
 # R e dependencias opcionais
-# RUN pacman -S tk texlive-bin gcc-fortran openblas r \
-#     --noconfirm --needed
+RUN pacman -S tk texlive-bin gcc-fortran openblas r \
+    --noconfirm --needed
