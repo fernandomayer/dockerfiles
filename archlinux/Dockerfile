@@ -4,8 +4,9 @@ COPY mirrorlist /etc/pacman.d/mirrorlist
 
 RUN echo 'ILoveCandy' >> /etc/pacman.conf
 RUN pacman -Syu --noconfirm
+RUN pacman -S vim nano
 
-# Se precisar de compilacao
+# Se precisar de compilacao (recomendado se for usar o R)
 # RUN pacman -S base-devel --noconfirm --needed
 
 # R e dependencias opcionais
