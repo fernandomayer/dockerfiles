@@ -1,6 +1,7 @@
 FROM archlinux
 
 COPY mirrorlist /etc/pacman.d/mirrorlist
+COPY Rprofile /root/.Rprofile
 
 RUN echo 'ILoveCandy' >> /etc/pacman.conf
 RUN pacman -Syu --noconfirm

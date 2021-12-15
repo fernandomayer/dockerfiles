@@ -1,6 +1,7 @@
 FROM ubuntu
 
 COPY sources.list /etc/apt/sources.list
+COPY Rprofile /root/.Rprofile
 
 RUN apt update && apt upgrade --yes
 RUN apt install vim nano --yes
