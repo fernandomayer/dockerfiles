@@ -47,3 +47,6 @@ deb http://security.ubuntu.com/ubuntu/ focal-security universe
 # deb-src http://security.ubuntu.com/ubuntu/ focal-security universe
 deb http://security.ubuntu.com/ubuntu/ focal-security multiverse
 # deb-src http://security.ubuntu.com/ubuntu/ focal-security multiverse
+
+## R
+# deb http://cran-r.c3sl.ufpr.br/bin/linux/ubuntu/ focal-cran40/
